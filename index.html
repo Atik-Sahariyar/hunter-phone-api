@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunting phone</title>
+
+  <!--Daisyui link-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+</head>
+
+<body>
+  <header>
+    <h1 class="text-3xl m-5 text-center">Phone Hunting API</h1>
+  </header>
+
+  <main class="container mx-auto mt-8">
+    <!--search section start-->
+    <section>
+      <input id="search-field" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+      <button onclick="handleSearch()" class="btn btn-active btn-primary">Primary</button>
+    </section>
+    <!--search section end-->
+
+    <!--Loader-->
+     <div id="load-infinity" class="flex justify-center items-center h-screen pb-48 hidden">
+      <span class="loading loading-infinity loading-lg flex"></span>
+     </div>
+
+    <!--phone search result start-->
+    <section>
+      <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      </div>
+      </div>
+    </section>
+    <!--phone card section  end-->
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="./JS/phone.js"></script>
+</body>
+
+</html>
